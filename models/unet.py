@@ -102,3 +102,7 @@ if __name__ == "__main__":
 
     x = torch.rand(1, 3, 256, 256)
     print(unet(x).shape)
+
+
+
+
