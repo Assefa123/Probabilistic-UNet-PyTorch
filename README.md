@@ -1,4 +1,4 @@
 # Probabilistic-UNet
 
 # Dataset
-You can download the dataset from https://drive.google.com/drive/folders/1jSi06fKA1LTqI1q3c5L07CLK3br1xMcs.
+Download the dataset from https://drive.google.com/drive/folders/1jSi06fKA1LTqI1q3c5L07CLK3br1xMcs.
