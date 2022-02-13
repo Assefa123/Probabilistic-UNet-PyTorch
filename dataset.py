@@ -7,6 +7,9 @@ import mimetypes
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
+
+
+
 IMAGE_EXTENSIONS = [k.lower() for k, v in mimetypes.types_map.items() if v.startswith('image')]
 
 
@@ -212,10 +215,8 @@ class LeafDataset(Dataset):
         # 1: Random horizontal flip
         # 2: Random vertical flip
         # 3: Random rotation
-        # 4. Gaussian Blur: Edge is important information here. So we should not use blurring.
         # 5. Normalize
         # 6: Random crop: (512, 512)
-        # The connector head must be visible all the time; therefore, no cropping is allowed.
         # 7. Resize: (300, 400)
 
         self.horizontal_flip = RandomHorizontalFlip(0.2)
@@ -285,4 +286,8 @@ if __name__ == '__main__':
     dataloader = DataLoader(ds, batch_size=1, shuffle=False)
     img, inst_mask = next(iter(dataloader))
     print(img.shape, inst_mask.shape)
+
+
+
+
 
