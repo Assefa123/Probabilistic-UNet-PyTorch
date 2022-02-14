@@ -287,7 +287,3 @@ if __name__ == '__main__':
     img, inst_mask = next(iter(dataloader))
     print(img.shape, inst_mask.shape)
 
-
-
-
-
