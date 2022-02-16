@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 
 
 
+
+
+
 IMAGE_EXTENSIONS = [k.lower() for k, v in mimetypes.types_map.items() if v.startswith('image')]
 
 
